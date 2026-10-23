@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bom dia</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='.9em'%20font-size='90'%3E%E2%98%80%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(160deg, #ffb347 0%, #ffcc70 45%, #ffe29a 100%);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    overflow: hidden;
+  }
+  .card {
+    text-align: center;
+    padding: 3rem 4rem;
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 24px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 40px rgba(180, 100, 0, 0.25);
+    animation: subir 1s ease-out both;
+  }
+  h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    color: #5a3e1b;
+    letter-spacing: -1px;
+  }
+  p {
+    margin-top: 0.75rem;
+    font-size: clamp(1rem, 3vw, 1.4rem);
+    color: #7a5c33;
+  }
+  .sol {
+    font-size: 4rem;
+    display: inline-block;
+    animation: girar 24s linear infinite;
+  }
+  @keyframes subir {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes girar { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+  <div class="card">
+    <span class="sol">☀️</span>
+    <h1>Bom dia!</h1>
+    <p>Que seu dia seja leve e produtivo.</p>
+  </div>
+</body>
+</html>
